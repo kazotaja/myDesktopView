@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&family=Unbounded:wght@200..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1E1E1E;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 200;
+    font-size: 12pt;
+    color: #FFA987
+    }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    }
+
+.grid-item {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    }
+
+.star {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(246, 151, 91);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+
+.main {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto);
+    gap: 20px;
+    }
+
+.frame {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(75, 64, 134);
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+    }
+
+.bevel {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(75, 206, 101);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    }
+
+.message {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(87, 168, 214);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    }
+
+.social-media div {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background-color: rgb(235, 172, 78);
+    clip-path: circle(50% at 50% 50%);
+    }
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    grid-template-rows: repeat(1, auto);
+    }
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(235, 172, 78);
+    clip-path: circle(50% at 50% 50%);
+    justify-self: start;
+    }
+
+.hamburger-menu {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(235, 172, 78);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    justify-self: end;
+    }
+
+.page-menu  {
+    display: none;
+    }
+
+.gallery    {
+    display: none;
+    }
+
+.contact-form   {
+    display: none;
+    }
+
+
+h1 {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 800;
+    font-size: 28pt;
+    text-transform: uppercase; 
+    }
+
+    
+hr  {
+    display: block;    
+    width: 200px;
+    height: 10px;
+    background-color: #E54B4B;
+    border-radius: 5px;
+    border: none;
+    margin: 0px; 
+    margin-bottom: 10px;
+    }
+    
+h2  {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 800;
+    font-size: 28pt;
+    text-transform: uppercase; 
+    color: #E54B4B;
+    border: 10px;
+    margin: 0px; 
+    margin-bottom: 20px;
+    }
+
+h3  {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+    text-transform: uppercase; 
+    color: #E54B4B;
+    border: 10px;
+    margin: 20px; 
+    margin-bottom: 20px;
+    }
+
+.page-menu {
+        display: block;
+        list-style: none;
+        justify-self: end;
+        font-family: 'Unbounded', sans-serif;
+        font-weight: 800;
+        font-size: 12pt;
+        text-transform: uppercase; 
+        color: #FFA987; 
+    }
+
+.page-menu li {
+        display: inline-block;
+        padding: 10px;
+    }
+
+.page-menu a {
+        color: #FFA987; 
+        text-decoration: none; 
+        transition: color 0.3s ease; 
+    }
+    
+.page-menu a:hover {
+        color: #E54B4B; 
+    }
+
+
+
+
+
+
+
+@media (min-width: 600px) and (max-width: 1024px)   
+    {
+    body 
+        {
+        background-color: gray;
+        color: blue;
+        }
+
+    .container  {
+        width: 100%;
+    }
+
+    .menu   {
+        width: 100%;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .page-menu  {
+        display: block;
+        list-style: none;
+        justify-self: end;
+        margin-right: 20px;
+    }
+
+    .page-menu li  {
+        display: inline-block;
+    }
+
+    .star   {
+        justify-self: start;
+    }
+
+    .frame  {
+        display: none;
+    }
+
+    .gallery    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+    }
+
+    .gallery-image  {
+        width: 377px;
+        height: 210px;
+        background-color: tomato;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 0% 75%);
+
+    }
+
+    .myclients  {
+        display: block;
+        width: 300px;
+        height: 210px;
+        margin-top: 20px;
+    }
+
+    .message    {
+        display: none;
+    }
+
+    .contact-form   {
+        display: block;
+        width: 762px;
+        height: 422px;
+        background-color: gold;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+
+    }
+
+    .social-media {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1025px)  {
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #1E1E1E;
+        }
+
+    .frame {
+        display: none;
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        }
+    
+    .container  {
+        width: 100%;
+    }
+
+    .menu   {
+        width: 1000px;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .page-menu  {
+        display: block;
+        list-style: none;
+        justify-self: end;
+        margin-right: 20px;
+    }
+
+    .page-menu li  {
+        display: inline-block;
+    }
+
+    .div    {
+        display:inline-block;
+        width: 1000px;
+        justify-self: start;
+    }
+
+    .gallery    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+    }
+
+    .gallery-image  {
+        width: 310px;
+        height: 210px;
+        background-color: tomato;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 0% 75%);
+    }
+
+    .container2 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr); 
+        grid-template-rows: repeat(1, auto);   
+        gap: 20px;    
+    }
+
+    .myclients  {
+        width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;  
+        padding: 20px;  
+    }
+
+    .client_image {
+        display: block;
+        justify-self: self-start;
+        width: 200px;
+        height: 200px;
+        }
+        
+    .client_text {
+        display: block;
+        justify-self: self-end;
+        margin-right: 5px;
+        width: 700px;
+        height: 200px;
+        }
+
+
+
+
+
+        
+
+    .text-box {
+        width: 250px;
+        padding: 10px;
+        border: 2px solid #FFA987; 
+        border-radius: 15px;
+        background-color: #f0f0f0; 
+        color: #333; 
+        font-size: 16px;
+        outline: none; 
+        transition: border-color 0.3s ease;
+    }
+    
+    .text-box:focus {
+        border-color: #E54B4B;
+    }
+
+    .social-media {
+        width: 400px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, auto);
+        gap: 5px;
+        padding-left: 25px;
+    }
+
+    .container3 {
+        width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .left-column {
+        display: inline-block; 
+        padding: 20px;
+        justify-content: flex-start;
+    }
+    
+    .right-column {
+        display: inline-block;
+        flex-direction: column; 
+        justify-content: flex-end;
+        padding: 20px;
+    }
+    
+    .right-column input {
+        margin-bottom: 10px; 
+        padding: 10px;      
+        border-radius: 5px; 
+        border: 1px solid #ccc;
+    }
+    
+    .right-column input:focus {
+        outline: none;     
+        border-color: #FFA987;
+    }
+
+    .send-button {
+        padding: 10px 20px; 
+        border: none;
+        border-radius: 5px;  
+        background-color: #FFA987;  
+        color: #1E1E1E;  
+        font-size: 16px;
+        cursor: pointer;
+        padding: 10px;
+        }
+        
+    button:hover {
+        background-color: #E54B4B;
+        }
+    
+    .send-button:hover {
+        background-color: #E54B4B;
+    }
+
+}
